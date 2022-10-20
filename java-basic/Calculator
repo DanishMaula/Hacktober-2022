@@ -1,0 +1,44 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Calculator {
+     public static void main(String[] args){
+
+         Scanner scanner = new Scanner(System.in);
+
+         System.out.println("Program Calculator");
+         System.out.println("Masukkan Angka Pertama:");
+         int angkaPertama = scanner.nextInt();
+
+         System.out.println("Masukkan Angka Pertama:");
+         int angkaKedua = scanner.nextInt();
+
+         System.out.println("Pilih Operator Anda");
+         System.out.println(" Tambah / Kurang / Bagi / Kali / SisaBagi: ");
+
+         String operator = scanner.next();
+
+         int hasil = 0;
+
+         switch (operator.trim().toLowerCase()){
+             case "tambah":
+                 hasil = angkaPertama + angkaKedua;
+                 break;
+             case "kurang":
+                 hasil = angkaPertama - angkaKedua;
+                break;
+             case "kali":
+                 hasil = angkaPertama * angkaKedua;
+                 break;
+             case "bagi":
+                 hasil = angkaPertama / angkaKedua;
+                 break;
+             case "sisabagi":
+                 hasil = angkaPertama % angkaKedua;
+                 break;
+             default:
+                 System.out.println("Operator yang di masukkan Salah");
+         }
+         System.out.println("Hasil:  " +  hasil);
+     }
+}

@@ -1,0 +1,32 @@
+import oop.Manusia;
+
+import java.util.*;
+
+public class ArrayList {
+    public static void main(String[] args){
+
+        // Collection adalah kumpulan data
+        // ada 3 Jenis
+
+        // 1) Array / List
+        // Cuman Bisa di ubah
+        String[] listNama = {"Reihan", "Agung", "Irwan", "Reihan"};
+        listNama[1] = "Ateng";
+
+
+
+        // Bisa di tambahkan lagi
+        List<String> listNamaUbah = new java.util.ArrayList<>();
+        listNamaUbah.add("Reihan");
+        listNamaUbah.add("Irwarn");
+        listNamaUbah.add("Ateng");
+        listNamaUbah.add("Agung");
+
+        System.out.println( listNamaUbah );
+
+        // Buat list nama-nama
+        // siswa di kelas 11 RPL
+        // terus di print
+
+    }
+}

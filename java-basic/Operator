@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Operator {
+    public static void main(String[] args){
+
+        int angka1 = 10;
+
+        // Penambahan
+        int tambah = angka1 + 15;
+
+        // Pengurangan
+        int kurang = angka1 - 5;
+
+        // Perkalian
+        int kali = angka1 * 4;
+
+        // Pembagian
+        int bagi = angka1 / 2;
+
+        // Modulus
+        int sisaBagi = 10 % 3;
+
+//        System.out.println(sisaBagi);
+
+        String angkaString = "15";
+        int angkaInteger = Integer.parseInt(angkaString);
+
+        int hasil = angkaInteger + 11;
+
+        System.out.println(hasil);
+
+        // True False
+        // Integer
+        boolean benarApaSalah = 15 == 16;
+
+        // contoh String
+        String nama1 = "Reihan";
+        String nama2 = "Reihan";
+
+        boolean samaAtauNggak = nama1 == nama2;
+
+    }
+}

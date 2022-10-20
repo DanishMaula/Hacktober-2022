@@ -1,0 +1,45 @@
+package oop;
+
+import java.util.Scanner;
+
+public class Predikat{
+
+    static int nilai;
+    // Nilai lebih 90 = Predikat A
+    // Nilai Lebih 80 = Predikat B
+    // Nilai lebih 70 = Predikat C
+    // Nilai di bawah = Tidak Lulus
+
+    static void tentukanPredikat(){
+        if(nilai > 90){
+            System.out.println("Predikat: A");
+        } else if(nilai > 80){
+            System.out.println("Predikat: B");
+        } else if(nilai > 70){
+            System.out.println("Predikat: C");
+        } else {
+            System.out.println("Tidak Lulus");
+        }
+    }
+
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+
+        // Cara 1
+        // harus membuat objek dulu
+        Predikat predikat = new Predikat();
+
+        System.out.println("Masukkan Nilai: ");
+        predikat.nilai = input.nextInt();
+        predikat.tentukanPredikat();
+
+        // Cara 2
+        // menambahkan static pada variable nilai
+        // dan static pada fungsi tentukanNilai()
+        // maka tidak perlu membuat objek
+        System.out.println("Masukkan Nilai: ");
+        nilai = input.nextInt();
+        tentukanPredikat();
+
+    }
+}

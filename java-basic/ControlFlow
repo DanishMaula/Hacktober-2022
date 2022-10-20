@@ -1,0 +1,35 @@
+public class ControlFlow {
+    public static void main(String[] args){
+
+        // If Else
+        String hewan = "Keledai";
+
+        if ( hewan == "Anjing" ){
+            System.out.println("Gug gug");
+        } else if( hewan == "Kucing" ){
+            System.out.println("Meow");
+        } else if( hewan == "Sapi" ){
+            System.out.println("Mooooo");
+        } else {
+            System.out.println("Suara Tidak Ketahui");
+        }
+
+        // Switch Case
+        String buah = "Jeruk";
+
+        switch(buah){
+            case "Apel":
+                System.out.println("Warna Merah");
+                break;
+            case "Jeruk":
+                System.out.println("Warna Kuning");
+                break;
+            case "Durian":
+                System.out.println("Warna Hijau");
+                break;
+            case "Anggur":
+                System.out.println("Warna Ungu");
+                break;
+        }
+    }
+}
